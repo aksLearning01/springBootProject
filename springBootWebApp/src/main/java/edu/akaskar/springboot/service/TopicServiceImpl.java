@@ -33,4 +33,18 @@ public class TopicServiceImpl implements TopicService {
 		topicsList.forEach(System.out::println);
 	}
 
+	public void updateTopic(Topic topic, Long topicId) {
+		for (int i = 0; i < topicsList.size(); i++) {
+			if (topicsList.get(i).getId().equals(topicId)) {
+				topicsList.set(i, topic);
+			}
+		}
+		topicsList.forEach(System.out::println);
+	}
+
+	public void deleteTopic(Long topicId) {
+		topicsList.removeIf(x->x.getId().equals(topicId));
+		
+	}
+
 }

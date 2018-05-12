@@ -12,4 +12,8 @@ public interface TopicService {
 
 	public void addTopic(Topic topic);
 
+	public void updateTopic(Topic topic, Long topicId);
+
+	public void deleteTopic(Long topicId);
+
 }
