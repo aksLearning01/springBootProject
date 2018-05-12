@@ -22,6 +22,14 @@ public class Topic implements Serializable {
 		this.description = description;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Topic [id=" + id + ", name=" + name + ", description=" + description + "]";
+	}
+
 	private Long id;
 
 	/**
